@@ -1,0 +1,39 @@
+.gridWrap {
+  padding: 0 10px 10px;
+  flex: 1;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 2px;
+}
+
+.weekday {
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  padding: 4px 0;
+  font-family: var(--font-body);
+}
+
+.weekend {
+  color: var(--color-accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px 0;
+}
+
+@media (max-width: 480px) {
+  .gridWrap {
+    padding: 0 4px 8px;
+  }
+  .weekday {
+    font-size: 0.58rem;
+  }
+}
